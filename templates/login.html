@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Login and registration form</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>{{message}}</h1>
+    </div>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id ="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+
+            </div>
+            <div class="social-icons">
+                <img src="static/images/fb.png">
+                <img src="static/images/tw.png">
+                <img src="static/images/gp.png">
+            </div>
+            <form id="login"class="input-group" action="/login" method="post">
+                <input type="eamil" class="input-field" placeholder="email id" name="email_id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" name="password" required>
+                <input type="checkbox" class="check-box"><span>Remember password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+            <form id="register" class="input-group" action="/register" method="post">
+                <input type="text" class="input-field" placeholder="User name"  name="user_name" required>
+                <input type="email" class="input-field" placeholder="Email Id" name="email_id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" name="password" required>
+                <!-- <input type="number" class="input-field" placeholder="Enter contact number" required> -->
+                <!-- <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span> -->
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>   
+    </div>
+    
+    <!-- <script>
+        //var x = document.getElementById("login");
+        //var y = document.getElementById("register");
+        //var z =document.getElementById("btn");
+        
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        
+        function login(){
+            
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+        }
+        //  function a(){
+            //
+            //      window.location.href = "/register";
+            //  }
+            //  function b(){
+                //
+                //      window.location.href = "/login";
+                //  }
+            </script> -->
+            <script src="static/js/login.js"></script>
+        </body>
+
+</html>

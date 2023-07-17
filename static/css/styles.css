@@ -1,0 +1,43 @@
+body{
+    background-color: #D8D8D8;
+}
+.tagline{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color:black;
+    margin-top:100px;
+}
+.preference{
+    margin:100px 500px 100px 500px;
+}
+#dateoftravel{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left:4px;
+    border-radius: 4px;
+    margin-left: 5px;
+    border-color: lightgrey;
+ }
+hr{
+    border-style: dotted;
+    border-color: black;
+    border-bottom: none;
+    border-width: 6px;
+    width: 20%;
+    margin: 55px auto;
+}
+#features{
+    padding: 3% 10%;
+    
+}
+.feature-box{
+    text-align:center;
+    
+    
+}
+.icon{
+    margin-bottom: 1rem;
+}
+.feature-box:hover{
+    background-color: white;    
+}
